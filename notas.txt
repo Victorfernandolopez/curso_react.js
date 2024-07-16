@@ -1,0 +1,22 @@
+Crear proyectos:
+create reactapp
+npm create vite@latest 
+
+props:
+practiamente los props se asemejan a los diccionarios(contienen keys y values)
+se implementan en el main.jsx y se utilizan en app.jsx
+
+main.jsx:
+ <React.StrictMode>
+    <App titulo="Hola Mundo" texto="texto1"/>
+ </React.StrictMode>,
+
+app.jsx:
+function App({titulo,texto}) {
+  return (
+    <>
+      <h1>{titulo}</h1>
+      <button>{texto}</button>
+    </>
+  )
+}
